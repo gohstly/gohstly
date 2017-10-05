@@ -1,1 +1,1 @@
-export { default } from "./DrawerMenu";
+export { default } from "./PersistentDrawer";
