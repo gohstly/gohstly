@@ -17,7 +17,7 @@ function FlatButtons(props) {
   const classes = props.classes;
   return (
     <div>
-      <Button href="#flat-buttons" className={classes.button}>
+      <Button href="/" className={classes.button}>
         <Link to="/">Login</Link>
       </Button>
 

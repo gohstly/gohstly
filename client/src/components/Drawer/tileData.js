@@ -14,25 +14,25 @@ export const mailFolderListItems = (
       <ListItemIcon>
         <InboxIcon />
       </ListItemIcon>
-      <ListItemText primary="Inbox" />
+      <ListItemText primary="Feed" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <StarIcon />
       </ListItemIcon>
-      <ListItemText primary="Starred" />
+      <ListItemText primary="Players" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <SendIcon />
       </ListItemIcon>
-      <ListItemText primary="Send mail" />
+      <ListItemText primary="Games" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <DraftsIcon />
       </ListItemIcon>
-      <ListItemText primary="Drafts" />
+      <ListItemText primary="Chat" />
     </ListItem>
   </div>
 );
@@ -43,19 +43,19 @@ export const otherMailFolderListItems = (
       <ListItemIcon>
         <MailIcon />
       </ListItemIcon>
-      <ListItemText primary="All mail" />
+      <ListItemText primary="Browse" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <DeleteIcon />
       </ListItemIcon>
-      <ListItemText primary="Trash" />
+      <ListItemText primary="Streams" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <ReportIcon />
       </ListItemIcon>
-      <ListItemText primary="Spam" />
+      <ListItemText primary="Videos" />
     </ListItem>
   </div>
 );

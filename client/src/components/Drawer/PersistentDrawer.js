@@ -15,6 +15,7 @@ import MenuIcon from 'material-ui-icons/Menu';
 import MaterialForm from '../MaterialForm';
 import LoginBtn from '../LoginBtn';
 import SignUpBtn from '../SignUpBtn';
+import SignUpForm from '../DialogueForm';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
@@ -52,7 +53,7 @@ const styles = theme => ({
   loginBtn: {
     marginLeft: 100,
   },
-  signUpBtn: {
+  signUpForm: {
     marginLeft: 100,
   },
   menuButton: {
@@ -78,7 +79,7 @@ const styles = theme => ({
     width: '100%',
     marginLeft: -drawerWidth,
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: "black",
     padding: theme.spacing.unit * 3,
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
@@ -133,10 +134,10 @@ class PersistentDrawer extends React.Component {
               </IconButton>
               
               <Typography type="title" color="inherit" noWrap>
-                Persistent drawer
+                Gohstly
               </Typography>
               <LoginBtn className={classNames(classes.loginBtn)}/>
-              <SignUpBtn className={classNames(classes.signUpBtn)}/>
+              <SignUpForm className={classNames(classes.signUpForm)}/>
             </Toolbar>
             
           </AppBar>
@@ -160,8 +161,9 @@ class PersistentDrawer extends React.Component {
             </div>
           </Drawer>
           <main className={classNames(classes.content, this.state.open && classes.contentShift)}>
-            <Typography type="body1" noWrap>
+            <Typography type="body1"  noWrap>
               {'You think water moves fast? You should see ice.'}
+
               
             </Typography>
           
