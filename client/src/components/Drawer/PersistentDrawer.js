@@ -13,6 +13,8 @@ import Divider from 'material-ui/Divider';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import MaterialForm from '../MaterialForm';
+import LoginBtn from '../LoginBtn';
+import SignUpBtn from '../SignUpBtn';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
@@ -46,6 +48,12 @@ const styles = theme => ({
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
+  },
+  loginBtn: {
+    marginLeft: 100,
+  },
+  signUpBtn: {
+    marginLeft: 100,
   },
   menuButton: {
     marginLeft: 12,
@@ -123,10 +131,14 @@ class PersistentDrawer extends React.Component {
               >
                 <MenuIcon />
               </IconButton>
+              
               <Typography type="title" color="inherit" noWrap>
                 Persistent drawer
               </Typography>
+              <LoginBtn className={classNames(classes.loginBtn)}/>
+              <SignUpBtn className={classNames(classes.signUpBtn)}/>
             </Toolbar>
+            
           </AppBar>
           <Drawer
             type="persistent"
