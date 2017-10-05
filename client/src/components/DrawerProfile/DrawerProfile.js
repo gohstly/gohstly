@@ -10,13 +10,15 @@ import List from 'material-ui/List';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+import TabsProfile from "../TabsProfile";
+import Avatar from "../Avatar";
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
     width: '100%',
-    height: 430,
+    height: 800,
     // marginTop: theme.spacing.unit * 3,
     zIndex: 1,
     overflow: 'hidden',
@@ -60,7 +62,7 @@ function PermanentDrawer(props) {
         <AppBar className={classes.appBar}>
           <Toolbar>
             <Typography type="title" color="inherit" noWrap>
-              Permanent drawer
+              My Profile
             </Typography>
           </Toolbar>
         </AppBar>
@@ -77,9 +79,8 @@ function PermanentDrawer(props) {
           <List>{otherMailFolderListItems}</List>
         </Drawer>
         <main className={classes.content}>
-          <Typography type="body1" noWrap>
-            {'You think water moves fast? You should see ice.'}
-          </Typography>
+        <Avatar/>
+          <TabsProfile/>
         </main>
       </div>
     </div>
