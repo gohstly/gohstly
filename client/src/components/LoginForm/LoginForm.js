@@ -26,32 +26,15 @@ export default class FormDialog extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleClickOpen} >SignUp</Button>
+        <Button onClick={this.handleClickOpen} >Login</Button>
         <Dialog open={this.state.open} onRequestClose={this.handleRequestClose}>
-          <DialogTitle>{'SignUp'}</DialogTitle>
+          <DialogTitle>{'Login'}</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              To sign up for Gohstly, please enter your email address here. We will send
-              updates occationally.
+              To login for Gohstly, please enter your information here. 
             </DialogContentText>
-            <TextField
-            autoFocus
-            required
-            id="required"
-            label="First Name"
-            
-            margin="normal"
-            fullWidth
-          />
-          <TextField
-          required
-          id="required"
-          label="Last Name"
-          
-          margin="normal"
-          fullWidth
-        />
         <TextField
+        autoFocus
           required
           id="required"
           label="UserName"
@@ -69,31 +52,7 @@ export default class FormDialog extends React.Component {
           margin="normal"
           fullWidth
         />
-        <TextField
-          required
-          id="required"
-          label="Steam Id"
-          
-          margin="normal"
-          fullWidth
-        />
-        <TextField
-          required
-          id="required"
-          label="Twitch Id"
-          
-          margin="normal"
-          fullWidth
-        />
-
-            <TextField
-              
-              margin="dense"
-              id="name"
-              label="Email Address"
-              type="email"
-              fullWidth
-            />
+        
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleRequestClose} color="primary">

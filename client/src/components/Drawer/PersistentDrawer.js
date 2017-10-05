@@ -16,6 +16,7 @@ import MaterialForm from '../MaterialForm';
 import LoginBtn from '../LoginBtn';
 import SignUpBtn from '../SignUpBtn';
 import SignUpForm from '../DialogueForm';
+import LoginForm from '../LoginForm';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
@@ -50,7 +51,7 @@ const styles = theme => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
-  loginBtn: {
+  loginForm: {
     marginLeft: 100,
   },
   signUpForm: {
@@ -136,7 +137,7 @@ class PersistentDrawer extends React.Component {
               <Typography type="title" color="inherit" noWrap>
                 Gohstly
               </Typography>
-              <LoginBtn className={classNames(classes.loginBtn)}/>
+              <LoginForm className={classNames(classes.loginForm)}/>
               <SignUpForm className={classNames(classes.signUpForm)}/>
             </Toolbar>
             
