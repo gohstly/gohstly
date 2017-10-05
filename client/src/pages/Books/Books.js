@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Divider from 'material-ui/Divider';
 
 class Books extends Component {
   state = {
@@ -57,9 +58,9 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h2>Tell us about your gaming experiences!</h2>
             </Jumbotron>
             <form>
               <Input
@@ -84,13 +85,14 @@ class Books extends Component {
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Submit Post
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6">
+          <Divider/>
+          <Col size="md-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h2>Here's what's going on in gaming!</h2>
             </Jumbotron>
             {this.state.books.length ? (
               <List>
