@@ -27,14 +27,14 @@ function SimpleMediaCard(props) {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography type="headline" component="h2">
+          <Typography type="headline" component="h3">
             
             Name: {props.name}
           </Typography>
           <Typography component="p">
           Location: {props.country}, {props.state}
           </Typography>
-          <Typography type="headline" component="h2">
+          <Typography type="headline" component="p">
             Profile Url: {props.url}
           </Typography>
           
