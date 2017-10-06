@@ -1,5 +1,4 @@
 // @flow weak
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
@@ -29,13 +28,16 @@ function SimpleMediaCard(props) {
         />
         <CardContent>
           <Typography type="headline" component="h2">
-            Lizard
-            {props.name}
+            Friends
+            Name: {props.name}
           </Typography>
           <Typography component="p">
-          {props.country}, {props.state}
-
+          Location: {props.country}, {props.state}
           </Typography>
+          <Typography type="headline" component="h2">
+            Profile Url: {props.url}
+          </Typography>
+          
         </CardContent>
         <CardActions>
           <Button dense color="primary">
@@ -54,5 +56,5 @@ SimpleMediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const CardsMain = withStyles(styles)(SimpleMediaCard);
-export { CardsMain }
+const FriendCards = withStyles(styles)(SimpleMediaCard);
+export { FriendCards };

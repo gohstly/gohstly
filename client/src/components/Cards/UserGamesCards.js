@@ -1,5 +1,4 @@
 // @flow weak
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
@@ -33,7 +32,7 @@ function SimpleMediaCard(props) {
             {props.name}
           </Typography>
           <Typography component="p">
-          {props.country}, {props.state}
+          Play Time: {props.hours}, Minutes Played
 
           </Typography>
         </CardContent>
@@ -54,5 +53,5 @@ SimpleMediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const CardsMain = withStyles(styles)(SimpleMediaCard);
-export { CardsMain }
+const UserGamesCards = withStyles(styles)(SimpleMediaCard);
+export { UserGamesCards };
