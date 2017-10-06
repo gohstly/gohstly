@@ -41,8 +41,8 @@ yarn build
 
 If all previous steps were followed correctly, your application should be deployed to Heroku!
 
-
-#Twitch 
+```
+# Twitch
 
 Included Twitch API calls to get user data and info and display user channel streams using channel ID 
 and displaying within an iframe for ease of viewing.
