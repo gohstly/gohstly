@@ -34,7 +34,7 @@ function SimpleMediaCard(props) {
           <Typography component="p">
           Location: {props.country}, {props.state}
           </Typography>
-          <Typography type="headline" component="p">
+          <Typography component="p">
             Profile Url: {props.url}
           </Typography>
           
