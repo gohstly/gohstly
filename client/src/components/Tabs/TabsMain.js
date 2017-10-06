@@ -4,6 +4,10 @@ import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import {CardsMain} from '../Cards';
+import {CardsTwo} from '../Cards';
+import {GridsList} from '../GridSingleList';
+import {ConnectGrids} from '../GridSingleList';
+import {ShareGrid} from '../GridSingleList';
 
 function TabContainer(props) {
   return <div style={{ padding: 20 }}>{props.children}</div>;
@@ -48,9 +52,9 @@ class TabsMain extends React.Component {
           <Tab label="Share" />
         </Tabs>
       </Paper>
-          {value === 0 && <TabContainer>{<CardsMain/>}</TabContainer>}
-          {value === 1 && <TabContainer>{<CardsMain/>}</TabContainer>}
-          {value === 2 && <TabContainer>{<CardsMain/>}</TabContainer>}
+          {value === 0 && <TabContainer>{<GridsList/>}</TabContainer>}
+          {value === 1 && <TabContainer>{<ConnectGrids/>}</TabContainer>}
+          {value === 2 && <TabContainer>{<ShareGrid/>}</TabContainer>}
       </div>
     );
   }

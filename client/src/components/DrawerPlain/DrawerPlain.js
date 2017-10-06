@@ -10,6 +10,7 @@ import List from 'material-ui/List';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+import {HeaderAvatar} from "../Avatar";
 
 const drawerWidth = 240;
 
@@ -59,8 +60,9 @@ function PermanentDrawer(props) {
       <div className={classes.appFrame}>
         <AppBar className={classes.appBar}>
           <Toolbar>
+          <HeaderAvatar/>
             <Typography type="title" color="inherit" noWrap>
-              Permanent drawer
+              
             </Typography>
           </Toolbar>
         </AppBar>

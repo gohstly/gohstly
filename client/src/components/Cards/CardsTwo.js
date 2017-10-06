@@ -6,6 +6,7 @@ import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import Image from './VideoGameCollection.png';
 
 const styles = {
   card: {
@@ -23,7 +24,7 @@ function MediaCard(props) {
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={Image}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -31,7 +32,7 @@ function MediaCard(props) {
             Play Games
           </Typography>
           <Typography component="p">
-            I love to play games all day long.
+          Hello
           </Typography>
         </CardContent>
         <CardActions>

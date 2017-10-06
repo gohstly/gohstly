@@ -23,6 +23,8 @@ import Image from './GohstlyTextLogo.png';
 import {CardsHome} from '../Cards';
 import Button from 'material-ui/Button';
 import {HeaderAvatar} from "../Avatar";
+import {GridsList} from "../GridSingleList";
+
 
 const drawerWidth = 240;
 

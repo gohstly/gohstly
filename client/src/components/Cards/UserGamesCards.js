@@ -28,7 +28,7 @@ function SimpleMediaCard(props) {
         />
         <CardContent>
           <Typography type="headline" component="h2">
-            Lizard
+            
             {props.name}
           </Typography>
           <Typography component="p">
