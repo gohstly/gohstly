@@ -6,7 +6,7 @@ import Books from "../Books";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import DrawerProfile from "../../components/DrawerProfile";
-import TabsProfile from "../../components/TabsProfile";
+
 
 
 class Feed extends Component {

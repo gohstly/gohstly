@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import darkBaseTheme from 'material-ui/styles';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
+
+// import Login from "./components/pages/Login";
+// import Form from "./components/pages/Form";
+
 import Profile from "./pages/Profile";
 import Feed from "./pages/Feed";
 import Books from "./pages/Books";
@@ -36,6 +40,7 @@ const App = () =>
       
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/app" component={Profile} />
         <Route exact path="/feed" component={Feed} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/books" component={Books} />
