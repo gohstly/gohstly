@@ -1,9 +1,15 @@
 {
   "main.css": "static/css/main.5a30127f.css",
   "main.css.map": "static/css/main.5a30127f.css.map",
-  "main.js": "static/js/main.92eeeaa9.js",
-  "main.js.map": "static/js/main.92eeeaa9.js.map",
+  "main.js": "static/js/main.312d3595.js",
+  "main.js.map": "static/js/main.312d3595.js.map",
+  "static/media/ComputerSocial.jpg": "static/media/ComputerSocial.a81a89ee.jpg",
   "static/media/GohstlyMiddle.png": "static/media/GohstlyMiddle.803a15ab.png",
+  "static/media/PlayingGames.jpg": "static/media/PlayingGames.1898688f.jpg",
+  "static/media/SocialGaming.png": "static/media/SocialGaming.5d7b6706.png",
+  "static/media/VideoGameCollection.png": "static/media/VideoGameCollection.2c10a7a7.png",
+  "static/media/WatchGames.jpg": "static/media/WatchGames.9570d25d.jpg",
   "static/media/gamecontroller.jpeg": "static/media/gamecontroller.ad587efc.jpeg",
-  "static/media/sampleavatar.png": "static/media/sampleavatar.ff0915f3.png"
+  "static/media/sampleavatar.png": "static/media/sampleavatar.ff0915f3.png",
+  "static/media/steam.jpg": "static/media/steam.f7f3404e.jpg"
 }
