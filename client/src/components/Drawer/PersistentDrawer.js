@@ -19,6 +19,10 @@ import SignUpForm from '../DialogueForm';
 import LoginForm from '../LoginForm';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+import Image from './GohstlyTextLogo.png';
+import {CardsHome} from '../Cards';
+import Button from 'material-ui/Button';
+import {HeaderAvatar} from "../Avatar";
 
 const drawerWidth = 240;
 
@@ -81,7 +85,7 @@ const styles = theme => ({
     marginLeft: -drawerWidth,
     flexGrow: 1,
     backgroundColor: "black",
-    padding: theme.spacing.unit * 3,
+    padding: theme.spacing.unit * 2,
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -134,9 +138,7 @@ class PersistentDrawer extends React.Component {
                 <MenuIcon />
               </IconButton>
               
-              <Typography type="title" color="inherit" noWrap>
-                Gohstly
-              </Typography>
+              <HeaderAvatar/>
               <LoginForm className={classNames(classes.loginForm)}/>
               <SignUpForm className={classNames(classes.signUpForm)}/>
             </Toolbar>
@@ -162,11 +164,8 @@ class PersistentDrawer extends React.Component {
             </div>
           </Drawer>
           <main className={classNames(classes.content, this.state.open && classes.contentShift)}>
-            <Typography type="body1"  noWrap>
-              {'You think water moves fast? You should see ice.'}
+          {<CardsHome/>}
 
-              
-            </Typography>
           
           </main>
           

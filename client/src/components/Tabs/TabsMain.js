@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import Tabs, { Tab } from 'material-ui/Tabs';
-import CardsMain from '../Cards';
+import {CardsMain} from '../Cards';
 
 function TabContainer(props) {
   return <div style={{ padding: 20 }}>{props.children}</div>;

@@ -1,2 +1,3 @@
-export { default } from "./CardsMain";
-export * from "./CardsTwo";
+export { CardsMain } from "./CardsMain";
+export { CardsTwo } from "./CardsTwo";
+export { CardsHome } from "./CardsHome";

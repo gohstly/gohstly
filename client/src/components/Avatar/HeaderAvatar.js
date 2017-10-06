@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { withStyles } from 'material-ui/styles';
 import Avatar from 'material-ui/Avatar';
-import Image from './sampleavatar.png';
+import Image from './GohstlyMini.png';
+import { Link } from "react-router-dom";
 
 const styles = {
   row: {
-    display: 'flex',
-    justifyContent: 'center',
+
   },
   avatar: {
     margin: 10,
@@ -25,7 +25,9 @@ function ImageAvatars(props) {
   const classes = props.classes;
   return (
     <div className={classes.row}>
-      <Avatar src={Image} className={classNames(classes.avatar, classes.bigAvatar)} />
+        <Link to="/" style={{ textDecoration: 'none' }}>
+      <Avatar src={Image} className={classes.avatar} />
+      </Link>
     </div>
   );
 }
@@ -34,5 +36,6 @@ ImageAvatars.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const ProfileAvatar = withStyles(styles)(ImageAvatars);
-export { ProfileAvatar };
+const HeaderAvatar = withStyles(styles)(ImageAvatars);
+export { HeaderAvatar };
+

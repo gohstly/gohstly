@@ -11,12 +11,15 @@ import { Link } from "react-router-dom";
 
 export const mailFolderListItems = (
   <div>
+    <Link to="/feed" style={{ textDecoration: 'none' }}>
     <ListItem button >
-      <ListItemIcon >
+      <ListItemIcon>
         <InboxIcon />
       </ListItemIcon>
-      <ListItemText  primary="Feed" />
+      <ListItemText primary="Feed" />
+      
     </ListItem>
+    </Link>
     <ListItem button>
       <ListItemIcon>
         <StarIcon />

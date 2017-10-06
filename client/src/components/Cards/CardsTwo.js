@@ -51,4 +51,5 @@ MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MediaCard);
+const CardsTwo = withStyles(styles)(MediaCard);
+export { CardsTwo }
