@@ -1,6 +1,9 @@
 {
   "main.css": "static/css/main.5a30127f.css",
   "main.css.map": "static/css/main.5a30127f.css.map",
-  "main.js": "static/js/main.0c9da989.js",
-  "main.js.map": "static/js/main.0c9da989.js.map"
+  "main.js": "static/js/main.51263de7.js",
+  "main.js.map": "static/js/main.51263de7.js.map",
+  "static/media/GohstlyMiddle.png": "static/media/GohstlyMiddle.803a15ab.png",
+  "static/media/gamecontroller.jpeg": "static/media/gamecontroller.ad587efc.jpeg",
+  "static/media/sampleavatar.png": "static/media/sampleavatar.ff0915f3.png"
 }
