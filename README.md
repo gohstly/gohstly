@@ -46,3 +46,8 @@ If all previous steps were followed correctly, your application should be deploy
 
 Included Twitch API calls to get user data and info and display user channel streams using channel ID 
 and displaying within an iframe for ease of viewing.
+
+# Steam
+
+Used axios package to call the Steam api and push/pull data from mongodb and display user information as
+well as friend information including number of hours played, location, etc. 
