@@ -6,11 +6,13 @@
 ## Deployed Here: https://gohstly.herokuapp.com/
 
 # Inspiration
-Say you just got a new video game. You go home, pop it in the system, and play it for a few hours. You are so excited about your new game that you want to tell your gaming friends all about it. You login to FaceBook to post a status about the game when suddenly you stop mid-typing and think to yourself, "Wait, this doesn't feel quite right. Do I really want to post on FaceBook where most of my connections don't even play video games?".
+Imagine you just got a new video game. You go home, pop it in the system, and play for a few hours.
 
-As fellow video gamers, we have encountered a scenario similar to this one too many times. We realized there lacks a platform where gamers can actively engage with other gamers in a social network type of way.
+You are so excited about your new game that you want to tell your gaming friends all about it. You login to FaceBook to post a status about the game when suddenly you stop mid-typing and think to yourself, "Wait, this doesn't feel quite right. Do I really want to post on FaceBook where most of my connections don't even play video games?".
 
-To solve this dilemma, we decided to take matters into our own hands and create Gohstly.
+As fellow video gamers, we have encountered a similar scenario one too many times. The video gaming community is lacking a social network platform where gamers can actively engage with other gamers.
+
+To solve this dilemma, we decided to take matters into our own hands and create Gohstly, a social networking platform for video gamers.
 
 # Application
 Gohstly is a social networking platform for video gamers built with ReactJs. With Gohstly, gamers have the ability to create their own personalized gaming profiles by utilizing Steam and Twitch API's. 
@@ -19,7 +21,7 @@ A user's profile will show the games they own, who they are friends with on stea
 
 # Built With
 
-Gohstly is built using JavaScript, React, node.js, Express, Material-UI. Gohstly uses the Twitch and Steam API's to generate user profile information upon signup. The application is currently deployed to Heroku and is backed by a remote MongoDB Database with Mongoose.
+Gohstly is built using JavaScript, React, node.js, Express, and Material-UI. Gohstly uses the Twitch and Steam API's to generate user profile information upon signup. The application is currently deployed to Heroku and is backed by a remote MongoDB Database with Mongoose.
 
 Node Packages Used: express, react, axios, mongoose, material-ui, material-ui-icons, material-design-icons, body-parser, react-router-dom
 
@@ -85,8 +87,8 @@ and displaying within an iframe for ease of viewing.
 
 ## Steam
 
-Used axios package to call the Steam api and push/pull data from mongodb and display user information as
-well as friend information including number of hours played, location, etc.
+Used axios package to call the Steam api and push/pull data from MongoDB Database and display user information as
+well as user "friend's" information including username, profile image, number of hours played, location, and Steam URL.
 
 1. Visit this link to learn more about the Steam API:
     1. https://developer.valvesoftware.com/wiki/Steam_Web_API
@@ -100,11 +102,11 @@ well as friend information including number of hours played, location, etc.
 4. Submit form.
 
 ## Step 2 - User Page
-1. After submitting the form, the user will be directed to their user page.
+1. After submitting the form, the user will be re-directed to their user page.
 2. Here, a user will have 4 tabs to choose from:
     1. Overview: The user's steam profile information that includes username, profile image, location, and Steam URL.
     2. Games: List of games that the user owns on steam.
-    3. Friends: List of Steam Friends that includes username, profile images, location, and Steam URL.
+    3. Friends: List of Steam Friends and friend information including username, profile images, location, and Steam URL.
     4. Activities: List of Twitch Videos, recent in game accomplishments, posts, and friends posts.
 
 ## Step 3 - Feed
@@ -114,7 +116,7 @@ well as friend information including number of hours played, location, etc.
 ## License
 MIT License
 
-Copyright (c) [2017] [Garrett Moore]
+Copyright (c) [2017] [Gohstly]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
