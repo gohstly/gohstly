@@ -20,7 +20,6 @@ Gohstly is a social networking platform for video gamers built with ReactJs. Wit
 A user's profile will show the games they own, who they are friends with on steam, and their Twitch videos. Users can create groups, post statues related to gaming, and connect with others in the video gaming community.
 
 # Built With
-
 Gohstly is built using JavaScript, React, node.js, Express, and Material-UI. Gohstly uses the Twitch and Steam API's to generate user profile information upon signup. The application is currently deployed to Heroku and is backed by a remote MongoDB Database with Mongoose.
 
 Node Packages Used: express, react, axios, mongoose, material-ui, material-ui-icons, material-design-icons, body-parser, react-router-dom
