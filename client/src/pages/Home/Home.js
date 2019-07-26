@@ -9,20 +9,15 @@ import TabsMain from "../../components/Tabs";
 
 
 class Home extends Component {
-    
-
-    
-      render() {
-        return (
-          <div>
-            <PersistentDrawer/>
-            <TabsMain/>
-              </div>
-            
-         
-        );
-      }
-    }
+  render() {
+    return (
+      <div>
+        <PersistentDrawer />
+        <TabsMain />
+      </div>
+    );
+  }
+}
 
 
 export default Home;

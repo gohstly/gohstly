@@ -10,21 +10,14 @@ import DrawerProfile from "../../components/DrawerProfile";
 
 
 class Feed extends Component {
-    
-
-    
-      render() {
-        return (
-          <div>
-            <DrawerProfile/>
-
-
-        </div>
-            
-         
-        );
-      }
-    }
+  render() {
+    return (
+      <div>
+        <DrawerProfile />
+      </div>
+    );
+  }
+}
 
 
 export default Feed;

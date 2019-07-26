@@ -2,11 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import darkBaseTheme from 'material-ui/styles';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-
-
-// import Login from "./components/pages/Login";
-// import Form from "./components/pages/Form";
-
 import Profile from "./pages/Profile";
 import Feed from "./pages/Feed";
 import Books from "./pages/Books";
@@ -21,7 +16,7 @@ import red from 'material-ui/colors/red';
 
 const theme = createMuiTheme({
   palette: {
-    primary: purple, // Purple and green play nicely together.
+    primary: purple,
     secondary: {
       ...green,
       A400: '#00e677',
@@ -31,26 +26,20 @@ const theme = createMuiTheme({
 });
 
 const App = () =>
-
   <Router>
     <MuiThemeProvider theme={theme}>
-    <div>
-    
-      
-      
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/app" component={Profile} />
-        <Route exact path="/feed" component={Feed} />
-        <Route exact path="/profile" component={Profile} />
-        <Route exact path="/books" component={Books} />
-        <Route exact path="/books/:id" component={Detail} />
-        <Route component={NoMatch} />
-      </Switch>
-     
-    </div>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/app" component={Profile} />
+          <Route exact path="/feed" component={Feed} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/books" component={Books} />
+          <Route exact path="/books/:id" component={Detail} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
     </MuiThemeProvider>
   </Router>;
- 
 
 export default App;

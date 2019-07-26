@@ -1,7 +1,6 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import TextField from 'material-ui/TextField'
-// import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import Checkbox from 'material-ui/Checkbox'
 import SelectField from 'material-ui/Select'
 import MenuItem from 'material-ui/Menu'
@@ -51,14 +50,6 @@ const renderCheckbox = ({ input, label }) =>
     onCheck={input.onChange}
   />
 
-// const renderRadioGroup = ({ input, ...rest }) =>
-//   <RadioButtonGroup
-//     {...input}
-//     {...rest}
-//     valueSelected={input.value}
-//     onChange={(event, value) => input.onChange(value)}
-//   />
-
 const renderSelectField = ({
   input,
   label,
@@ -92,12 +83,6 @@ const MaterialUiForm = props => {
       <div>
         <Field name="email" component={renderTextField} label="Email" />
       </div>
-      {/* <div>
-        <Field name="sex" component={renderRadioGroup}>
-          <RadioButton value="male" label="male" />
-          <RadioButton value="female" label="female" />
-        </Field>
-      </div> */}
       <div>
         <Field
           name="favoriteColor"
@@ -134,7 +119,7 @@ const MaterialUiForm = props => {
 }
 
 export default reduxForm({
-  form: 'MaterialUiForm', // a unique identifier for this form
+  form: 'MaterialUiForm',
   validate,
   asyncValidate
 })(MaterialUiForm)

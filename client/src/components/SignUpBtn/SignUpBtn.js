@@ -11,17 +11,12 @@ const styles = theme => ({
   },
 });
 
-
-
 function FlatButtons(props) {
   const classes = props.classes;
   return (
     <div>
       <Button href="/" className={classes.button}>
-        
       </Button>
-
-
     </div>
   );
 }
